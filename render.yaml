@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: refrigeracao-palmeira
+    runtime: docker
+    plan: free
+    region: ohio
+    branch: main
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    autoDeploy: true
