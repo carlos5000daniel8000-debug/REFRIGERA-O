@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refrigeração Palmeira</title>
+    <style>
+        :root {
+            --primary: #004d66;
+            --secondary: #00a3cc;
+            --background: #f4f9fb;
+            --surface: #ffffff;
+            --text: #1f2d3d;
+            --muted: #5c717f;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--background);
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 56px 24px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.7rem;
+            margin-bottom: 16px;
+        }
+        header p {
+            max-width: 720px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            opacity: 0.95;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 14px 28px;
+            background: #ffffff;
+            color: var(--primary);
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+        }
+    .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 1000px;
+            margin: 28px auto 0;
+            border-radius: 24px;
+            box-shadow: 0 18px 45px rgba(13, 30, 48, 0.12);
+        }
+        .container {
+            padding: 48px 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 14px 32px rgba(13, 30, 48, 0.06);
+        }
+        .card h3 {
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+        .card p {
+            color: var(--muted);
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        .section-title p {
+            color: var(--muted);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        footer {
+            background: #ffffff;
+            padding: 24px;
+            text-align: center;
+            color: var(--muted);
+            border-top: 1px solid #e4e8ed;
+        }
+        .contact-card {
+            display: grid;
+            gap: 16px;
+            align-items: start;
+        }
+        .contact-item {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            color: var(--muted);
+        }
+        .contact-item strong {
+            min-width: 80px;
+            color: var(--text);
+        }
+        @media (max-width: 640px) {
+            header {
+                padding: 40px 16px;
+            }
+            .container {
+                padding: 32px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Refrigeração Palmeira</h1>
+        <p>Serviços profissionais em refrigeração residencial e comercial. Instalação, manutenção, conserto e limpeza de aparelhos de ar-condicionado, câmaras frias e geladeiras com atendimento rápido e garantia de qualidade.</p>
+        <a class="btn" href="#contato">Solicitar Orçamento</a>
+    </header>
+
+    <img class="hero-image" src="fundo.png.jpg" alt="Refrigeração Palmeira">
+
+    <section class="container" id="servicos">
+        <div class="section-title">
+            <h2>Nossos Serviços</h2>
+            <p>Atendimento completo para manter seu ambiente climatizado e seus equipamentos funcionando com eficiência o ano todo.</p>
+        </div>
+        <div class="grid">
+            <article class="card">
+                <h3>Instalação</h3>
+                <p>Instalação de aparelhos de ar-condicionado split, janela e cassete com mão de obra especializada e equipamentos seguros.</p>
+            </article>
+            <article class="card">
+                <h3>Manutenção</h3>
+                <p>Manutenção preventiva e corretiva para garantir o desempenho ideal e reduzir o consumo de energia.</p>
+            </article>
+            <article class="card">
+                <h3>Reparo</h3>
+                <p>Conserto de vazamentos, troca de peças, revisões elétricas e diagnósticos rápidos para evitar paradas inesperadas.</p>
+            </article>
+            <article class="card">
+                <h3>Limpeza Técnica</h3>
+                <p>Limpeza completa das unidades internas e externas, remoção de sujeira e fungos para um ar mais saudável.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="container" id="sobre">
+        <div class="section-title">
+            <h2>Por que escolher a Refrigeração Palmeira?</h2>
+            <p>Experiência, confiança e atendimento local. Cuidamos do seu conforto com rapidez e transparência.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Equipe Especializada</h3>
+                <p>Nossos técnicos são treinados e usam as melhores práticas para entregar serviços com segurança e eficiência.</p>
+            </div>
+            <div class="card">
+                <h3>Atendimento Rápido</h3>
+                <p>Resposta ágil para emergências e suporte proativo para evitar maiores problemas.</p>
+            </div>
+            <div class="card">
+                <h3>Qualidade Garantida</h3>
+                <p>Peças originais, orçamentos claros e serviço finalizado com foco na satisfação do cliente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="contato">
+        <div class="section-title">
+            <h2>Contato</h2>
+            <p>Fale conosco e agende seu atendimento. Estamos prontos para ajudar com qualquer necessidade de refrigeração.</p>
+        </div>
+        <div class="card contact-card">
+            <div class="contact-item">
+                <strong>Telefone:</strong>
+                <span>(83 9 8835-4958)</span>
+                <span>(83 9 8734-8115)</span>
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <span>contato@refrigeracaopalmeira.com.br</span>
+            </div>
+            <div class="contact-item">
+                <strong>Atendimento:</strong>
+                <span>Seg a Sab, 08h às 18h</span>
+            </div>
+            <div class="contact-item">
+                <strong>Local:</strong>
+                <span>Palmeira, PB</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Refrigeração Palmeira © 2026 - Soluções em refrigeração.</p>
+    </footer>
+</body>
+</html>
